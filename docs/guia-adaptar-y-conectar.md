@@ -197,12 +197,25 @@ https://<ID_PROYECTO>.firebaseapp.com/__/auth/handler
 2. Ubicación por defecto (Estados Unidos) → **Siguiente**.
 3. **Iniciar en modo bloqueado** → **Habilitar**.
 
-### Paso 6 — Publicar las reglas
-1. Pestaña **Reglas** → borra todo.
-2. Pega el contenido de `database.rules.json` → **Publicar**.
+### Paso 6 — Publicar las reglas (el código que se pega en Realtime Database)
+
+Al crear la base, Firebase muestra una pestaña **Reglas** con un código que bloquea todo. Hay que
+reemplazarlo por el de este proyecto, que está en el archivo `database.rules.json` (en la raíz del
+proyecto, junto a `settings.gradle`).
+
+1. En Firebase: **Bases de datos y almacenamiento → Realtime Database → pestaña Reglas**.
+2. Haz clic dentro del editor y borra todo (`Ctrl + A`, `Supr`).
+3. Abre `database.rules.json` en el Bloc de notas o en Android Studio, copia **todo** su contenido
+   (`Ctrl + A`, `Ctrl + C`) y pégalo en el editor de Firebase (`Ctrl + V`).
+4. Pulsa **Publicar**. Debe aparecer un aviso de que se publicaron las reglas.
 
 Qué hacen: cada usuario solo lee y escribe sus propios datos, valida los campos y, una vez que un
 elemento deja de estar `Pendiente`, no se puede modificar ni borrar.
+
+**Cuándo repetirlo:** solo cuando creas un proyecto de Firebase nuevo, o si cambias el nombre de los datos
+(por ejemplo `pronosticos` por `tareas`). Las reglas viven en Firebase, no en la PC: **abrir el proyecto
+en otra computadora no exige volver a pegarlas**. Si ves `Permission denied` al guardar, casi siempre es
+porque las reglas no están publicadas o tienen otro nombre de datos.
 
 ### Paso 7 — Descargar el google-services.json
 Hazlo **después** de activar Google (así incluye el cliente web) y de crear la base de datos (así

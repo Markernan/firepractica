@@ -59,6 +59,27 @@ git clone https://github.com/Markernan/firepractica.git
 
 ## 4. Poner los archivos de credenciales
 
+> **Cómo se conecta la app con Firebase:** el `google-services.json` es el archivo que une la app con
+> tu proyecto de Firebase. Dentro trae tu `project_id`, el paquete de la app y `firebase_url`, que es la
+> **dirección de tu base de datos** (`https://TU-PROYECTO-default-rtdb.firebaseio.com`). No hay que
+> configurar la base de datos en el código: con ese archivo en `app/` la app ya la encuentra.
+>
+> **Si el proyecto de Firebase ya existe** (los métodos de acceso, la base de datos y las reglas ya
+> están creados), en una PC nueva **no repitas nada en la consola**: solo descarga este JSON y colócalo.
+> Si el proyecto de Firebase todavía **no existe**, créalo primero con la sección 5 de
+> [`guia-adaptar-y-conectar.md`](guia-adaptar-y-conectar.md).
+>
+> **No confundas los dos "JSON":**
+>
+> | Archivo | Para qué | Dónde se usa |
+> |---|---|---|
+> | `google-services.json` | Conecta la app con Firebase | Se copia a `app/` |
+> | `database.rules.json` | Reglas de seguridad de la base de datos | Se **pega en la consola de Firebase**: Realtime Database → pestaña **Reglas** → **Publicar** |
+>
+> Las reglas se pegan **una sola vez por proyecto de Firebase** (paso 6 de la sección 5 de la guía de
+> adaptación). Viven en Firebase, no en la PC: en una PC nueva con el mismo Firebase **no hay que volver
+> a pegarlas**.
+
 Dos archivos **no están en GitHub** (están en `.gitignore`) y hay que crearlos a mano:
 
 | Archivo | Ruta dentro del proyecto |
@@ -70,8 +91,12 @@ Dos archivos **no están en GitHub** (están en `.gitignore`) y hay que crearlos
 
 - **A. Desde el zip o pendrive de la otra PC:** copia los dos archivos a esas rutas.
 - **B. Desde las consolas (lo más seguro):**
-  - `google-services.json`: Firebase → ⚙ **Configuración del proyecto** → **Tus apps** → botón
-    **google-services.json**. Cópialo a `app/`.
+  - `google-services.json`: https://console.firebase.google.com → abre tu proyecto → pulsa el **engranaje ⚙**
+    (arriba a la izquierda, junto a "Descripción general del proyecto") → **Configuración del proyecto**
+    → baja a **Tus apps**, elige tu app Android → pulsa **google-services.json**. Se descarga en
+    *Descargas*; cópialo a `app/` y, si ya había uno, reemplázalo.
+    Para comprobarlo, ábrelo con el Bloc de notas: debe decir tu `project_id`, tu `package_name` y una
+    línea `firebase_url` con `firebaseio.com`.
   - `facebook.xml`: copia `docs/plantillas/facebook.xml.example` a `app/src/main/res/values/facebook.xml`
     y reemplaza los tres valores:
     - `facebook_app_id`: Meta → tu app → **Configuración de la app → Básica → ID de la app**
