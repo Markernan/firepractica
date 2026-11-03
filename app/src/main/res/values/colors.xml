@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="verde_cancha">#1B7F3B</color>
+    <color name="verde_oscuro">#0F5226</color>
+    <color name="dorado">#F2B705</color>
+    <color name="fondo">#F4F7F5</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="texto_principal">#16241B</color>
+    <color name="texto_secundario">#5A6B61</color>
+    <color name="estado_pendiente">#E08E00</color>
+    <color name="estado_acertado">#1B9A4B</color>
+    <color name="estado_fallado">#D13B3B</color>
+    <color name="borde">#D5DED8</color>
+</resources>

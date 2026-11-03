@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pronósticos del Mundial</string>
+
+    <!-- Inicio de sesión -->
+    <string name="login_titulo">Pronósticos del Mundial</string>
+    <string name="login_subtitulo">Inicia sesión para registrar y seguir tus predicciones</string>
+    <string name="hint_correo">Correo electrónico</string>
+    <string name="hint_contrasena">Contraseña</string>
+    <string name="hint_confirmar_contrasena">Confirmar contraseña</string>
+    <string name="btn_iniciar_sesion">Iniciar sesión</string>
+    <string name="btn_google">Continuar con Google</string>
+    <string name="btn_github">Continuar con GitHub</string>
+    <string name="btn_facebook">Continuar con Facebook</string>
+    <string name="o_continua_con">o continúa con</string>
+    <string name="olvide_contrasena">¿Olvidaste tu contraseña?</string>
+    <string name="sin_cuenta">¿Eres nuevo?</string>
+    <string name="registrate">Crear una cuenta</string>
+
+    <!-- Registro / recuperación -->
+    <string name="registro_titulo">Crear cuenta</string>
+    <string name="registro_subtitulo">Regístrate con tu correo electrónico</string>
+    <string name="btn_registrarme">Registrarme</string>
+    <string name="btn_volver_login">Ya tengo cuenta</string>
+    <string name="recuperar_titulo">Recuperar contraseña</string>
+    <string name="recuperar_mensaje">Te enviaremos un enlace para restablecer tu contraseña.</string>
+    <string name="btn_enviar">Enviar enlace</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="recuperar_enviado">Si el correo existe, recibirás un enlace para restablecer tu contraseña</string>
+
+    <!-- Validaciones y errores de autenticación -->
+    <string name="error_correo_vacio">Ingresa tu correo electrónico</string>
+    <string name="error_correo_invalido">Correo electrónico no válido</string>
+    <string name="error_contrasena_vacia">Ingresa tu contraseña</string>
+    <string name="error_contrasena_corta">Mínimo 6 caracteres</string>
+    <string name="error_contrasenas_distintas">Las contraseñas no coinciden</string>
+    <string name="error_credenciales">Correo o contraseña incorrectos</string>
+    <string name="error_correo_en_uso">Ya existe una cuenta con ese correo</string>
+    <string name="error_sin_red">Sin conexión. Revisa tu internet</string>
+    <string name="error_autenticacion">No se pudo completar la autenticación</string>
+    <string name="error_social_cancelado">Inicio de sesión cancelado</string>
+    <string name="error_social_cuenta_existente">Ya existe una cuenta con ese correo usando otro método de acceso</string>
+    <string name="registro_exitoso">Cuenta creada. ¡Bienvenido!</string>
+
+    <!-- Navegación -->
+    <string name="nav_pronosticos">Mis Pronósticos</string>
+    <string name="nav_estadisticas">Estadísticas</string>
+    <string name="nav_cerrar_sesion">Cerrar Sesión</string>
+    <string name="cerrar_sesion_titulo">Cerrar sesión</string>
+    <string name="cerrar_sesion_mensaje">¿Seguro que quieres salir?</string>
+    <string name="btn_salir">Salir</string>
+
+    <!-- Pronósticos -->
+    <string name="pronosticos_titulo">Mis Pronósticos</string>
+    <string name="pronosticos_vacio">Aún no tienes pronósticos.\nToca + para registrar el primero.</string>
+    <string name="item_vs">%1$s  vs  %2$s</string>
+    <string name="item_fecha">Fecha del partido: %1$s</string>
+    <string name="item_resultado">Resultado pronosticado: %1$d - %2$d</string>
+    <string name="item_bloqueado">Bloqueado: el resultado ya fue definido</string>
+    <string name="btn_editar">Editar</string>
+    <string name="btn_eliminar">Eliminar</string>
+    <string name="estado_pendiente">Pendiente</string>
+    <string name="estado_acertado">Acertado</string>
+    <string name="estado_fallado">Fallado</string>
+    <string name="error_cargar">No se pudieron cargar tus pronósticos</string>
+
+    <!-- Formulario -->
+    <string name="form_titulo_nuevo">Registrar pronóstico</string>
+    <string name="form_titulo_editar">Editar pronóstico</string>
+    <string name="hint_seleccion_a">Selección A</string>
+    <string name="hint_seleccion_b">Selección B</string>
+    <string name="hint_fecha">Fecha del partido</string>
+    <string name="hint_goles_a">Goles de la Selección A</string>
+    <string name="hint_goles_b">Goles de la Selección B</string>
+    <string name="hint_estado">Estado</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="btn_actualizar">Actualizar</string>
+    <string name="estado_aviso_bloqueo">Al marcarlo como Acertado o Fallado, el pronóstico quedará bloqueado.</string>
+    <string name="error_campo_obligatorio">Campo obligatorio</string>
+    <string name="error_selecciones_iguales">Las selecciones no pueden ser iguales</string>
+    <string name="error_fecha_obligatoria">Elige la fecha del partido</string>
+    <string name="error_goles_invalidos">Ingresa un número entero válido</string>
+    <string name="error_guardar">No se pudo guardar. Inténtalo de nuevo</string>
+    <string name="error_solo_pendiente">Solo se pueden modificar pronósticos pendientes</string>
+
+    <!-- Eliminar -->
+    <string name="eliminar_titulo">Eliminar pronóstico</string>
+    <string name="eliminar_mensaje">¿Eliminar %1$s vs %2$s? Esta acción no se puede deshacer.</string>
+    <string name="error_eliminar">No se pudo eliminar. Inténtalo de nuevo</string>
+    <string name="eliminado_ok">Pronóstico eliminado</string>
+
+    <!-- Notificaciones -->
+    <string name="canal_pronosticos">Pronósticos</string>
+    <string name="canal_pronosticos_desc">Avisos al registrar o actualizar tus pronósticos</string>
+    <string name="notif_registrado_titulo">Pronóstico registrado</string>
+    <string name="notif_registrado_texto">Tu pronóstico %1$s vs %2$s fue registrado correctamente</string>
+    <string name="notif_actualizado_titulo">Pronóstico actualizado</string>
+    <string name="notif_actualizado_texto">Tu pronóstico %1$s vs %2$s fue actualizado correctamente</string>
+    <string name="toast_permiso_notificaciones">Sin permiso no recibirás avisos del sistema</string>
+
+    <!-- Estadísticas -->
+    <string name="est_titulo">Estadísticas del Mundial</string>
+    <string name="est_filtro">Filtrar por selección</string>
+    <string name="est_todas">Todas las selecciones</string>
+    <string name="est_total">Total</string>
+    <string name="est_acertados">Acertados</string>
+    <string name="est_fallados">Fallados</string>
+    <string name="est_pendientes">Pendientes</string>
+    <string name="est_grafico_barras">Pronósticos por estado</string>
+    <string name="est_grafico_circular">Distribución porcentual</string>
+    <string name="est_sin_datos">Sin datos para mostrar</string>
+
+    <string-array name="selecciones">
+        <item>Alemania</item>
+        <item>Arabia Saudita</item>
+        <item>Argentina</item>
+        <item>Australia</item>
+        <item>Bélgica</item>
+        <item>Bolivia</item>
+        <item>Brasil</item>
+        <item>Camerún</item>
+        <item>Canadá</item>
+        <item>Chile</item>
+        <item>Colombia</item>
+        <item>Corea del Sur</item>
+        <item>Costa Rica</item>
+        <item>Croacia</item>
+        <item>Dinamarca</item>
+        <item>Ecuador</item>
+        <item>Egipto</item>
+        <item>España</item>
+        <item>Estados Unidos</item>
+        <item>Francia</item>
+        <item>Ghana</item>
+        <item>Inglaterra</item>
+        <item>Irán</item>
+        <item>Italia</item>
+        <item>Japón</item>
+        <item>Marruecos</item>
+        <item>México</item>
+        <item>Nigeria</item>
+        <item>Países Bajos</item>
+        <item>Paraguay</item>
+        <item>Perú</item>
+        <item>Polonia</item>
+        <item>Portugal</item>
+        <item>Senegal</item>
+        <item>Suiza</item>
+        <item>Uruguay</item>
+        <item>Venezuela</item>
+    </string-array>
+</resources>

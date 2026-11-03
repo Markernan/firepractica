@@ -1,0 +1,21 @@
+{
+  "rules": {
+    "pronosticos": {
+      "$uid": {
+        ".read": "auth != null && auth.uid === $uid",
+        "$id": {
+          ".write": "auth != null && auth.uid === $uid && (!data.exists() || data.child('estado').val() === 'Pendiente')",
+          ".validate": "newData.hasChildren(['seleccionA', 'seleccionB', 'fechaPartido', 'golesA', 'golesB', 'estado'])",
+          "seleccionA": { ".validate": "newData.isString() && newData.val().length > 0" },
+          "seleccionB": { ".validate": "newData.isString() && newData.val().length > 0 && newData.val().toLowerCase() !== newData.parent().child('seleccionA').val().toLowerCase()" },
+          "fechaPartido": { ".validate": "newData.isNumber()" },
+          "golesA": { ".validate": "newData.isNumber() && newData.val() >= 0" },
+          "golesB": { ".validate": "newData.isNumber() && newData.val() >= 0" },
+          "estado": { ".validate": "newData.val() === 'Pendiente' || newData.val() === 'Acertado' || newData.val() === 'Fallado'" },
+          "creadoEn": { ".validate": "newData.isNumber()" },
+          "$other": { ".validate": false }
+        }
+      }
+    }
+  }
+}

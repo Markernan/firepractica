@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_pronosticos" android:icon="@drawable/ic_lista" android:title="@string/nav_pronosticos" />
+    <item android:id="@+id/nav_estadisticas" android:icon="@drawable/ic_estadisticas" android:title="@string/nav_estadisticas" />
+    <item android:id="@+id/nav_cerrar_sesion" android:icon="@drawable/ic_salir" android:title="@string/nav_cerrar_sesion" />
+</menu>

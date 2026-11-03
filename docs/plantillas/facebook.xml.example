@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Meta for Developers: tu app -> Configuración de la app -> Básica -> ID de la app -->
+    <string name="facebook_app_id" translatable="false">ID_DE_LA_APP</string>
+    <!-- Es la letra "fb" seguida del ID de la app, sin espacios. Ejemplo: fb1234567890 -->
+    <string name="fb_login_protocol_scheme" translatable="false">fbID_DE_LA_APP</string>
+    <!-- Meta for Developers: Configuración de la app -> Avanzada -> Seguridad -> Token de cliente -->
+    <string name="facebook_client_token" translatable="false">TOKEN_DE_CLIENTE</string>
+</resources>

@@ -1,0 +1,20 @@
+*.iml
+.gradle/
+build/
+local.properties
+.idea/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+.firebase/
+*-debug.log
+firebase-debug.log
+ui-debug.log
+database-debug.log
+.shots/
+
+# Credenciales: no se suben a Git (dónde van y cómo crearlas: docs/guia-adaptar-y-conectar.md, sección 12)
+app/google-services.json
+app/src/main/res/values/facebook.xml
