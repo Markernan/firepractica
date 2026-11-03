@@ -5,6 +5,8 @@ correo, Google, GitHub y Facebook; lista con crear/editar/eliminar en tiempo rea
 gráficos. Esta guía explica qué cambiar para llevarla a otro proyecto y cómo crear y conectar Firebase
 desde cero.
 
+> **¿Vas a abrir el proyecto en otra PC?** Empieza por [`00-empezar-en-cualquier-pc.md`](00-empezar-en-cualquier-pc.md): ahí está cómo sacar el SHA-1 y el hash de clave de esa PC (con script) y registrarlos.
+
 Convenciones: `<PAQUETE>` es el nombre de paquete nuevo (ej. `com.tunombre.miapp`),
 `<ID_PROYECTO>` es el ID del proyecto de Firebase (ej. `miapp-1a2b3`).
 

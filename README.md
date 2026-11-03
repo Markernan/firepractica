@@ -5,8 +5,9 @@ App Android nativa (Java, minSdk 34) con Firebase Authentication y Realtime Data
 
 Estructura en Firebase: `pronosticos/{uid}/{id}` con `seleccionA`, `seleccionB`, `fechaPartido` (ms), `golesA`, `golesB`, `estado`, `creadoEn`.
 
-> **Guía completa** para adaptar este proyecto a otro tema y conectarlo a Firebase desde cero:
-> [`docs/guia-adaptar-y-conectar.md`](docs/guia-adaptar-y-conectar.md)
+> **Documentación** (en `docs/`):
+> - **[`00-empezar-en-cualquier-pc.md`](docs/00-empezar-en-cualquier-pc.md)** — instalar, clonar y sacar el SHA-1 y el hash de clave en cualquier PC (incluye un script).
+> - [`guia-adaptar-y-conectar.md`](docs/guia-adaptar-y-conectar.md) — adaptar el proyecto a otro nombre/tema y crear Firebase desde cero.
 
 > **Credenciales fuera de Git:** `app/google-services.json` y `app/src/main/res/values/facebook.xml`
 > están en `.gitignore`. Si clonas el proyecto, créalos con las plantillas de `docs/plantillas/`
