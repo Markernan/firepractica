@@ -38,3 +38,4 @@ firebase emulators:start --only auth,database --project demo-firepractica
 ```
 
 El emulador de Android alcanza el equipo anfitrión en `10.0.2.2`.
+# lab6_20221747
