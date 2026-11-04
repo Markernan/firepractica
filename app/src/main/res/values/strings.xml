@@ -3,8 +3,8 @@
     <string name="app_name">Pronósticos del Mundial</string>
 
     <!-- Inicio de sesión -->
-    <string name="login_titulo">Pronósticos del Mundial</string>
-    <string name="login_subtitulo">Inicia sesión para registrar y seguir tus predicciones</string>
+    <string name="login_titulo">Sesiones de estudio</string>
+    <string name="login_subtitulo">Inicia sesión</string>
     <string name="hint_correo">Correo electrónico</string>
     <string name="hint_contrasena">Contraseña</string>
     <string name="hint_confirmar_contrasena">Confirmar contraseña</string>
@@ -43,26 +43,25 @@
     <string name="registro_exitoso">Cuenta creada. ¡Bienvenido!</string>
 
     <!-- Navegación -->
-    <string name="nav_pronosticos">Mis Pronósticos</string>
+    <string name="nav_pronosticos">Mis sesiones de estudio</string>
     <string name="nav_estadisticas">Estadísticas</string>
     <string name="nav_cerrar_sesion">Cerrar Sesión</string>
     <string name="cerrar_sesion_titulo">Cerrar sesión</string>
     <string name="cerrar_sesion_mensaje">¿Seguro que quieres salir?</string>
     <string name="btn_salir">Salir</string>
 
-    <!-- Pronósticos -->
-    <string name="pronosticos_titulo">Mis Pronósticos</string>
-    <string name="pronosticos_vacio">Aún no tienes pronósticos.\nToca + para registrar el primero.</string>
+    <string name="pronosticos_titulo">Mis sesiones de estudio</string>
+    <string name="pronosticos_vacio">Aún no tienes sesiones.\nToca + para registrar la primera.</string>
     <string name="item_vs">%1$s  vs  %2$s</string>
-    <string name="item_fecha">Fecha del partido: %1$s</string>
-    <string name="item_resultado">Resultado pronosticado: %1$d - %2$d</string>
+    <string name="item_fecha">Fecha: %1$s</string>
+    <string name="item_resultado">Resultado: %1$d - %2$d</string>
     <string name="item_bloqueado">Bloqueado: el resultado ya fue definido</string>
     <string name="btn_editar">Editar</string>
     <string name="btn_eliminar">Eliminar</string>
     <string name="estado_pendiente">Pendiente</string>
     <string name="estado_acertado">Acertado</string>
     <string name="estado_fallado">Fallado</string>
-    <string name="error_cargar">No se pudieron cargar tus pronósticos</string>
+    <string name="error_cargar">No se pudieron cargar tus sesiones</string>
 
     <!-- Formulario -->
     <string name="form_titulo_nuevo">Registrar pronóstico</string>
